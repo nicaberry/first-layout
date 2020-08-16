@@ -1,0 +1,152 @@
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1143px 1fr;
+    grid-template-rows: 90px 650px auto 300px;
+    grid-template-areas: 
+    "header header header"
+    "aside-slider aside-slider aside-slider"
+    "main main main"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+
+    z-index: 10;
+}
+
+.header section {
+    width: 1143px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #4a4a4a;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-menu li{
+    margin-left: 40px;
+}
+
+.header-menu a{
+    color: #929292;
+}
+
+.header-menu_active a {
+    color:#000;
+}
+
+.aside-slider {
+    grid-area: aside-slider;
+}
+
+.main {
+    grid-area: main;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fafafa;
+}
+
+.main > section {
+    width: 1143px;
+}
+
+.main-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 59px;
+
+    font-weight: bold;
+
+    margin-top: 34px;
+    margin-bottom: 30px;
+
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.main-menu li {
+    margin-left: 24px;
+    color: #777777;
+}
+.main-menu li img {
+    width: 12px;
+    height: 30px;
+}
+
+.main-menu a {
+    color: #777777;
+}
+
+.main-menu_active a {
+    color: #000;
+}
+
+
+.footer {
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 -2px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.footer .logo {
+    margin-top: 65px;
+    margin-bottom: 44px;
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 65px;
+
+    margin-bottom: 36px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.bottom {
+    color: #9c9c9c;
+    font-size: 11px;
+}
+
+.bottom span {
+    color: #000;
+}
+
+.footer-menu li {
+    margin: 20px;
+}
+
+.footer-menu a {
+    padding: 10px;
+}
